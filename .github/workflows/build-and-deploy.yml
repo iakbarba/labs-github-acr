@@ -25,5 +25,5 @@ jobs:
         uses: docker/build-push-action@v2
         with:
           push: true
-          tags: ${{ secrets/AKR_SERVERNAME}}/${{ env.IMAGE_REPOSITORY_NAME }}.${{ env.IMAGE_TAG }}
+          tags: ${{ secrets.AKR_SERVERNAME}}/${{ env.IMAGE_REPOSITORY_NAME }}.${{ env.IMAGE_TAG }}
         
